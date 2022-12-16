@@ -1,0 +1,144 @@
+<html>
+<head>
+<title> L Cart </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style> 
+    script{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+    }
+    header{
+        float:right;
+        background-color: azure;
+        color: black;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /*display: flex;
+        flex-direction: row;*/
+    }
+    li:hover{
+        background-color: rgb(132, 152, 132);
+        color:black;
+    }
+    ul{
+        padding: 14px;
+    }
+    li{
+        list-style: none;
+        display:inline;
+        padding: 0 13px;
+        text-decoration: none;
+    }
+
+    p{
+        color: crimson;
+       /* display: inline;*/
+        font-size: 28px;
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    body{
+        background-color:aliceblue;
+    }
+    *{
+        margin: 0px;
+        padding:0px;
+    }
+    #about{
+        
+        background-color:azure;
+        border: black;
+        border-style: dotted;
+    
+    }
+    #about h1{
+     font-size: 3s8px;
+     color: blueviolet;
+     text-align: center;
+     font-family: fantasy;
+     
+    }
+    #about p{
+        font-size: 18px;
+        font-family:calc();
+        text-align:center;
+        color : blueviolet;
+    }
+   </style>
+
+
+<script type="text/javascript">
+
+    var p =new Array();
+    p[0]='img15.jpg';
+    p[1]='img16.jpg';
+    p[2]='img17.jpg';
+    p[3]='img18.jpg';
+    var i=0,t;
+    function picnext(){
+        if (i>=3)
+        {
+            i=0;
+        }
+        else if(i>=0){
+            i=i+1;
+        }else
+        {
+            i=i+2;
+        }
+        document.getElementById('picbox').src=p[i];
+    }
+    function picprevious(){
+        if(i<=0)
+        {
+            i=3;
+        }
+        else if(i<=3){
+            i=i-1;
+        }else{
+            i=i-2;
+        }
+        document.getElementById('picbox').src=p[i];
+    }
+</script>
+</head>
+
+<body>
+    
+<header>
+    <nav>
+        <ul>
+            <li><a href="Project L Cart.html">Home </a> </li>
+            <li> <a href="#About"> About Us</a> </li>
+            <li><a href="Project L cart2.html">   Laptops </a></li>
+            <li><a href="Sign up.html"> My Account</a></li>
+            <li>My Orders</li>
+            <li>Offer Zone</li>
+        </ul>
+    </nav>
+</header>
+<p><b>Welcome To L cart! <br/> We have brought the best Laptops for u!</b> </p>
+<img src="img15.jpg" id="picbox" height="600px" width="1600px" ></img>
+<br>
+<input type="button" value="Previous" onclick="picprevious()">
+<input type="button" value="Next" onclick="picnext()">
+
+
+    
+           
+   
+<div id="About">
+ <h1>About Us</h1><br/>
+ <p>
+  E-mail:-rakshitpriyanka620@gmail.com<br/>
+  Contact Number:- +91-9749546318<br/>
+  <i class="fa-brands fa-instagram">Insta:- bong_girl_546</i>
+</p>
+</div>
+</body>
+ 
+
+</html>
